@@ -62,7 +62,8 @@ D - DIP
 \+ GameObject has an abstract update method and is a supertype to Bullet, Monster and Tower. GamePanel uses a GameObject array to loop through and call the update method in each of them. 
 #### Föreslå minst en rimlig användning av ett designmönster, som kodbasen inte redan använder (eller använder felaktigt), och beskriv hur denna förändring skulle påverka kodbasens design, positivt eller negativt.
 
-Observer pattern is used in GameFrame and GamePanel to check for mouse events and timer ticks. However the implementation is lackluster. 
+- Observer pattern is used in GameFrame and GamePanel to check for mouse events and timer ticks. However the implementation is lackluster.
+- Applicera MVC(A) och dela upp programmet i de olika delarna. Just nu har 4 klasser en paint-metoden. 
 
 
 
