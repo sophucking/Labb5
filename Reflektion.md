@@ -56,7 +56,8 @@ D - DIP
 #### Identifiera och förklara (minst) tre olika användningar, eller försök till användningar, av design patterns vi tagit upp i kursen - om sådana existerar i kodbasen.
 #### Föreslå minst en rimlig användning av ett designmönster, som kodbasen inte redan använder (eller använder felaktigt), och beskriv hur denna förändring skulle påverka kodbasens design, positivt eller negativt.
 
-Observer pattern is used in GameFrame and GamePanel to check for mouse events and timer ticks. However the implementation is lackluster. 
+- Observer pattern is used in GameFrame and GamePanel to check for mouse events and timer ticks. However the implementation is lackluster.
+- Applicera MVC(A) och dela upp programmet i de olika delarna. Just nu har 4 klasser en paint-metoden. 
 
 
 
