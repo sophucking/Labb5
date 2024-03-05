@@ -4,9 +4,7 @@
 
 ### Relationer till klasser
 Gör en avvägning kring relationer till externa klasser/interfaces (dvs klasser/interfaces som inte är en del av kodbasen); ta med de relationer som känns viktiga för att klargöra kodbasens design, utelämna de som inte gör det.
-- An
 - DIP: GameObjects är en abstrakt klass
-- 
 - ObserverPattern genom JavaSwing
 - 
 
