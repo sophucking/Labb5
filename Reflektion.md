@@ -19,12 +19,18 @@ Gör liknande avvägningar för konstruktorer och för privata fält och metoder
 S - SRP
     Single Responsibility Principle:
         A class should have one, and only one, responsibility, and do it well.
+- Bullet.java handles:
+-- a bullet, position, size, damage
+-- how it updates each tick
+--- if should be removed from array of GameObjects
+-- which monster is it's target
+-- how it's represented on the screen
+-- what panel it's stored in and drawn on
 
-THESE GO AGAINST SRP:
-- Bullet
-- Block
-- 
-- Monster
+- Map.java handles: 
+-- the map, reading the textfile and creating a block-matrix from it, identifying tower positions, the start/end points, what path the monsters need to take. 
+--- also handles how the map is painted
+-- placing towers on the map (where allowed)
 
 O - OCP
     Open Closed Principle:
@@ -44,7 +50,6 @@ D - DIP
     Dependency Inversion Principle:
         Depend on abstraction, not on concrete implementations.
 
-\+ GameObject has an abstract update method and is a supertype to Bullet, Monster and Tower. GamePanel uses a GameObject array to loop through and call the update method in each of them. 
 
 
 ##### Monster
@@ -54,6 +59,7 @@ D - DIP
 
 
 #### Identifiera och förklara (minst) tre olika användningar, eller försök till användningar, av design patterns vi tagit upp i kursen - om sådana existerar i kodbasen.
+\+ GameObject has an abstract update method and is a supertype to Bullet, Monster and Tower. GamePanel uses a GameObject array to loop through and call the update method in each of them. 
 #### Föreslå minst en rimlig användning av ett designmönster, som kodbasen inte redan använder (eller använder felaktigt), och beskriv hur denna förändring skulle påverka kodbasens design, positivt eller negativt.
 
 Observer pattern is used in GameFrame and GamePanel to check for mouse events and timer ticks. However the implementation is lackluster. 
